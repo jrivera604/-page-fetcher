@@ -9,7 +9,7 @@ const path = input[1];
 const fetcher = () => {
   request(url, (error, response, body) => {
     if(error){
-      console.log(`Critical Error: ${error}`)
+      console.log(`Warning ${error}`)
       process.exit();
     }
     if(response){
